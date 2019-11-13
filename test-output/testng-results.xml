@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="6122" started-at="2019-11-13T02:30:18Z" finished-at="2019-11-13T02:30:25Z">
+  <suite name="Default suite" duration-ms="18422" started-at="2019-11-13T08:33:59Z" finished-at="2019-11-13T08:34:18Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="6122" started-at="2019-11-13T02:30:18Z" finished-at="2019-11-13T02:30:25Z">
+    <test name="Default test" duration-ms="18422" started-at="2019-11-13T08:33:59Z" finished-at="2019-11-13T08:34:18Z">
       <class name="autotest.chrome">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:autotest.chrome@7e0babb1]" name="beforeTest" is-config="true" duration-ms="6109" started-at="2019-11-13T09:30:18Z" finished-at="2019-11-13T09:30:25Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:autotest.chrome@7e0babb1]" name="beforeTest" is-config="true" duration-ms="18393" started-at="2019-11-13T15:33:59Z" finished-at="2019-11-13T15:34:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="f()[pri:0, instance:autotest.chrome@7e0babb1]" name="f" duration-ms="3" started-at="2019-11-13T09:30:25Z" finished-at="2019-11-13T09:30:25Z">
+        <test-method status="PASS" signature="f()[pri:0, instance:autotest.chrome@7e0babb1]" name="f" duration-ms="15" started-at="2019-11-13T15:34:18Z" finished-at="2019-11-13T15:34:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- f -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:autotest.chrome@7e0babb1]" name="afterTest" is-config="true" duration-ms="1" started-at="2019-11-13T09:30:25Z" finished-at="2019-11-13T09:30:25Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:autotest.chrome@7e0babb1]" name="afterTest" is-config="true" duration-ms="0" started-at="2019-11-13T15:34:18Z" finished-at="2019-11-13T15:34:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
