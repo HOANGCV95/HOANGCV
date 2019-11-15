@@ -55,7 +55,17 @@ public class NewTest2 {
 	  AssertJUnit.assertEquals("Please enter 6 or more characters without leading or trailing spaces.",errorFomatPass);
 	  	  
   }
-  
+  @Test
+  public void TC_4() {
+	  driver.findElement(By.xpath("//input[ @name=\"login[password]\"]"))
+	  .clear();
+	  driver.findElement(By.xpath("//input[ @name=\"login[password]\"]"))
+	  .sendKeys("123123123");
+	  driver.findElement(By.xpath("//button[@id=\"send2\"]")).click();
+	  String errorInvalidPass = driver.findElement(By.xpath("//span[text()='Invalid login or password.']")).getText(); 
+	  AssertJUnit.assertEquals("Invalid login or password.",errorInvalidPass);
+	  	  
+  }
   
   @AfterTest
   public void afterTest() {
