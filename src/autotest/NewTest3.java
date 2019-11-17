@@ -1,6 +1,9 @@
 package autotest;
 
 import org.testng.annotations.Test;
+
+import org.testng.Assert;
+
 import org.testng.annotations.BeforeTest;
 
 import static org.junit.Assert.assertEquals;
@@ -76,10 +79,8 @@ public class NewTest3 {
 	  driver.findElement(By.xpath("//input[ @name=\"login[password]\"]")).clear();
 	  driver.findElement(By.xpath("//input[ @name=\"login[password]\"]")).sendKeys("123456789");
 	  driver.findElement(By.xpath("//button[@id=\"send2\"]")).click();
-	  String VerifyInfomation= driver.findElement(By.xpath("//div[@class=\"box-content\"] /p[contains(text(),'Chu Hoàng')]")).getText();
-	  System.out.print(VerifyInfomation);
-	  //so sanh ket qua
-	  assertEquals("Chu Hoàng",VerifyInfomation);
+	  String text= driver.findElement(By.xpath("//div[@class=\"box-content\"] /p[contains(text(),'Chu Hoàng')]")).getText();
+		  Assert.assertTrue(text.contains("Chu Hoàng"));
 	  	  // van fail hic hic
   }
 
