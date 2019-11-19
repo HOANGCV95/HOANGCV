@@ -1,46 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="6" passed="5">
+<testng-results skipped="0" failed="1" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="35386" started-at="2019-11-15T03:24:20Z" finished-at="2019-11-15T03:24:56Z">
+  <suite name="Default suite" duration-ms="15644" started-at="2019-11-19T04:25:39Z" finished-at="2019-11-19T04:25:55Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="35386" started-at="2019-11-15T03:24:20Z" finished-at="2019-11-15T03:24:56Z">
-      <class name="autotest.NewTest3">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:autotest.NewTest3@7e0babb1]" name="beforeTest" is-config="true" duration-ms="17898" started-at="2019-11-15T10:24:20Z" finished-at="2019-11-15T10:24:38Z">
+    <test name="Default test" duration-ms="15644" started-at="2019-11-19T04:25:39Z" finished-at="2019-11-19T04:25:55Z">
+      <class name="autotest.Lession04">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:autotest.Lession04@27f674d]" name="beforeTest" is-config="true" duration-ms="8860" started-at="2019-11-19T11:25:39Z" finished-at="2019-11-19T11:25:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="TC_1()[pri:0, instance:autotest.NewTest3@7e0babb1]" name="TC_1" duration-ms="1647" started-at="2019-11-15T10:24:38Z" finished-at="2019-11-15T10:24:40Z">
+        <test-method status="PASS" signature="TC_1()[pri:0, instance:autotest.Lession04@27f674d]" name="TC_1" duration-ms="4194" started-at="2019-11-19T11:25:48Z" finished-at="2019-11-19T11:25:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_1 -->
-        <test-method status="PASS" signature="TC_2()[pri:0, instance:autotest.NewTest3@7e0babb1]" name="TC_2" duration-ms="209" started-at="2019-11-15T10:24:40Z" finished-at="2019-11-15T10:24:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_2 -->
-        <test-method status="PASS" signature="TC_3()[pri:0, instance:autotest.NewTest3@7e0babb1]" name="TC_3" duration-ms="281" started-at="2019-11-15T10:24:40Z" finished-at="2019-11-15T10:24:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_3 -->
-        <test-method status="PASS" signature="TC_4()[pri:0, instance:autotest.NewTest3@7e0babb1]" name="TC_4" duration-ms="1765" started-at="2019-11-15T10:24:40Z" finished-at="2019-11-15T10:24:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_4 -->
-        <test-method status="FAIL" signature="TC_5()[pri:0, instance:autotest.NewTest3@7e0babb1]" name="TC_5" duration-ms="2748" started-at="2019-11-15T10:24:42Z" finished-at="2019-11-15T10:24:45Z">
-          <exception class="org.junit.ComparisonFailure">
+        <test-method status="FAIL" signature="TC_2()[pri:0, instance:autotest.Lession04@27f674d]" name="TC_2" duration-ms="1452" started-at="2019-11-19T11:25:53Z" finished-at="2019-11-19T11:25:54Z">
+          <exception class="org.openqa.selenium.UnhandledAlertException">
             <message>
-              <![CDATA[expected:<Chu Hoàng[]> but was:<Chu Hoàng[
-hoangcv@vnpay.vn
-Change Password]>]]>
+              <![CDATA[unexpected alert open: {Alert text : Please fill all fields}
+  (Session info: chrome=78.0.3904.97): Please fill all fields
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'HOANGCV', ip: '172.16.68.227', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.97, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\hoangcv\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57946}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 1b4562878f739ba2c98f749991395e68
+*** Element info: {Using=xpath, value=//input[@name='name']}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.junit.ComparisonFailure: expected:<Chu Hoàng[]> but was:<Chu Hoàng[
-hoangcv@vnpay.vn
-Change Password]>
-	at org.junit.Assert.assertEquals(Assert.java:125)
-	at org.junit.Assert.assertEquals(Assert.java:147)
-	at autotest.NewTest3.TC_5(NewTest3.java:82)
+              <![CDATA[org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Please fill all fields}
+  (Session info: chrome=78.0.3904.97): Please fill all fields
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'HOANGCV', ip: '172.16.68.227', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.97, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\hoangcv\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57946}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 1b4562878f739ba2c98f749991395e68
+*** Element info: {Using=xpath, value=//input[@name='name']}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at autotest.Lession04.TC_2(Lession04.java:58)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -67,19 +72,15 @@ Change Password]>
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.junit.ComparisonFailure -->
+          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_5 -->
-        <test-method status="PASS" signature="TC_6()[pri:0, instance:autotest.NewTest3@7e0babb1]" name="TC_6" duration-ms="10002" started-at="2019-11-15T10:24:45Z" finished-at="2019-11-15T10:24:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_6 -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:autotest.NewTest3@7e0babb1]" name="afterTest" is-config="true" duration-ms="805" started-at="2019-11-15T10:24:55Z" finished-at="2019-11-15T10:24:56Z">
+        </test-method> <!-- TC_2 -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:autotest.Lession04@27f674d]" name="afterTest" is-config="true" duration-ms="1124" started-at="2019-11-19T11:25:54Z" finished-at="2019-11-19T11:25:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-      </class> <!-- autotest.NewTest3 -->
+      </class> <!-- autotest.Lession04 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

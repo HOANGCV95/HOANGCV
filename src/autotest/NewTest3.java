@@ -17,7 +17,9 @@ import org.testng.annotations.AfterTest;
 
 public class NewTest3 {
 	WebDriver driver;
-
+	By email = By.xpath("//input[@id='email' and @name=\"login[username]\"]");
+	By password = By.xpath("//input[ @name=\"login[password]\"]");
+	By loginButton = By.xpath("//button[@id=\"send2\"]");
 	  @BeforeTest
 	  public void beforeTest() {
 		  System.setProperty("webdriver.chrome.driver","C:\\Users\\hoangcv\\Desktop\\AUTOTEST\\chromedriver_win32\\chromedriver.exe");
@@ -30,7 +32,7 @@ public class NewTest3 {
 	  //click vao account
 	  driver.findElement(By.xpath("//div[@class='footer']//a[text()='My Account']")).click();
 	  //click vao login
-	  driver.findElement(By.xpath("//button[@id=\"send2\"]")).click();
+	  driver.findElement(loginButton).click();
 	  //Kiem tra hien thi
 	  String errorEmailMassege = driver.findElement(By.xpath("//div[@id='advice-required-entry-email']")).getText(); 
 	  System.out.println("loi mail"+ errorEmailMassege );
@@ -42,43 +44,37 @@ public class NewTest3 {
  
   @Test
   public void TC_2() {
-	  driver.findElement(By.xpath("//input[@id='email' and @name=\"login[username]\"]"))
-	  .sendKeys("1511551@1516125.5454");
-	  driver.findElement(By.xpath("//button[@id=\"send2\"]")).click();
+	  driver.findElement(email).sendKeys("1511551@1516125.5454");
+	  driver.findElement(loginButton).click();
 	  String errorFomatEmail = driver.findElement(By.xpath("//div[@id='advice-validate-email-email']")).getText(); 
 	 assertEquals("Please enter a valid email address. For example johndoe@domain.com.",errorFomatEmail);
   }
   @Test
   public void TC_3() {
-	  driver.findElement(By.xpath("//input[@id='email' and @name=\"login[username]\"]"))
-	  .clear();
-	  driver.findElement(By.xpath("//input[@id='email' and @name=\"login[username]\"]"))
-	  .sendKeys("automation@gmail.com");
-	  driver.findElement(By.xpath("//input[ @name=\"login[password]\"]"))
-	  .sendKeys("123");
-	  driver.findElement(By.xpath("//button[@id=\"send2\"]")).click();
+	  driver.findElement(email).clear();
+	  driver.findElement(email).sendKeys("automation@gmail.com");
+	  driver.findElement(password).sendKeys("123");
+	  driver.findElement(loginButton).click();
 	  String errorFomatPass = driver.findElement(By.xpath("//div[@id='advice-validate-password-pass']")).getText(); 
 	  assertEquals("Please enter 6 or more characters without leading or trailing spaces.",errorFomatPass);
 	  	  
   }
   @Test
   public void TC_4() {
-	  driver.findElement(By.xpath("//input[ @name=\"login[password]\"]"))
-	  .clear();
-	  driver.findElement(By.xpath("//input[ @name=\"login[password]\"]"))
-	  .sendKeys("123123123");
-	  driver.findElement(By.xpath("//button[@id=\"send2\"]")).click();
+	  driver.findElement(password).clear();
+	  driver.findElement(password).sendKeys("123123123");
+	  driver.findElement(loginButton).click();
 	  String errorInvalidPass = driver.findElement(By.xpath("//span[text()='Invalid login or password.']")).getText(); 
 	  assertEquals("Invalid login or password.",errorInvalidPass);
 	  	  
   }
   @Test
   public void TC_5() {
-	  driver.findElement(By.xpath("//input[@id='email' and @name=\"login[username]\"]")).clear();
-	  driver.findElement(By.xpath("//input[@id='email' and @name=\"login[username]\"]")).sendKeys("Hoangcv@vnpay.vn");
-	  driver.findElement(By.xpath("//input[ @name=\"login[password]\"]")).clear();
-	  driver.findElement(By.xpath("//input[ @name=\"login[password]\"]")).sendKeys("123456789");
-	  driver.findElement(By.xpath("//button[@id=\"send2\"]")).click();
+	  driver.findElement(email).clear();
+	  driver.findElement(email).sendKeys("Hoangcv@vnpay.vn");
+	  driver.findElement(password).clear();
+	  driver.findElement(password).sendKeys("123456789");
+	  driver.findElement(loginButton).click();
 	  String text= driver.findElement(By.xpath("//div[@class=\"box-content\"] /p[contains(text(),'Chu Hoàng')]")).getText();
 		  Assert.assertTrue(text.contains("Chu Hoàng"));
 	  	  // van fail hic hic

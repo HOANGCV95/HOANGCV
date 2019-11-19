@@ -12,6 +12,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Lession03{
 	WebDriver driver;
+	
 	  @BeforeTest
 	  public void beforeTest() {
 		  System.setProperty("webdriver.chrome.driver","C:\\Users\\hoangcv\\Desktop\\AUTOTEST\\chromedriver_win32\\chromedriver.exe");

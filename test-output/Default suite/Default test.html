@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>5/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Nov 15 10:24:20 ICT 2019</td>
+<td>Started on:</td><td>Tue Nov 19 11:25:39 ICT 2019</td>
 </tr>
-<tr><td>Total time:</td><td>35 seconds (35386 ms)</td>
+<tr><td>Total time:</td><td>15 seconds (15644 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,13 +75,25 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='autotest.NewTest3.TC_5()'><b>TC_5</b><br>Test class: autotest.NewTest3</td>
-<td><div><pre>org.junit.ComparisonFailure: expected:&lt;Chu Hoàng[]&gt; but was:&lt;Chu Hoàng[
-hoangcv@vnpay.vn
-Change Password]&gt;
-	at org.junit.Assert.assertEquals(Assert.java:125)
-	at org.junit.Assert.assertEquals(Assert.java:147)
-	at autotest.NewTest3.TC_5(NewTest3.java:82)
+<td title='autotest.Lession04.TC_2()'><b>TC_2</b><br>Test class: autotest.Lession04</td>
+<td><div><pre>org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Please fill all fields}
+  (Session info: chrome=78.0.3904.97): Please fill all fields
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;HOANGCV&apos;, ip: &apos;172.16.68.227&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.97, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\hoangcv\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57946}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 1b4562878f739ba2c98f749991395e68
+*** Element info: {Using=xpath, value=//input[@name=&apos;name&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at autotest.Lession04.TC_2(Lession04.java:58)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -106,13 +118,25 @@ Change Password]&gt;
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
-</pre></div><a href='#' onClick='toggleBox("stack-trace177140066", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace177140066'><pre>org.junit.ComparisonFailure: expected:&lt;Chu Hoàng[]&gt; but was:&lt;Chu Hoàng[
-hoangcv@vnpay.vn
-Change Password]&gt;
-	at org.junit.Assert.assertEquals(Assert.java:125)
-	at org.junit.Assert.assertEquals(Assert.java:147)
-	at autotest.NewTest3.TC_5(NewTest3.java:82)
+</pre></div><a href='#' onClick='toggleBox("stack-trace307829448", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace307829448'><pre>org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Please fill all fields}
+  (Session info: chrome=78.0.3904.97): Please fill all fields
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;HOANGCV&apos;, ip: &apos;172.16.68.227&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.97, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\hoangcv\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57946}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 1b4562878f739ba2c98f749991395e68
+*** Element info: {Using=xpath, value=//input[@name=&apos;name&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at autotest.Lession04.TC_2(Lession04.java:58)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -138,8 +162,8 @@ Change Password]&gt;
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
 </pre></div></td>
-<td>2</td>
-<td>autotest.NewTest3@7e0babb1</td></tr>
+<td>1</td>
+<td>autotest.Lession04@27f674d</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -149,30 +173,10 @@ Change Password]&gt;
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='autotest.NewTest3.TC_1()'><b>TC_1</b><br>Test class: autotest.NewTest3</td>
+<td title='autotest.Lession04.TC_1()'><b>TC_1</b><br>Test class: autotest.Lession04</td>
 <td></td>
-<td>1</td>
-<td>autotest.NewTest3@7e0babb1</td></tr>
-<tr>
-<td title='autotest.NewTest3.TC_2()'><b>TC_2</b><br>Test class: autotest.NewTest3</td>
-<td></td>
-<td>0</td>
-<td>autotest.NewTest3@7e0babb1</td></tr>
-<tr>
-<td title='autotest.NewTest3.TC_3()'><b>TC_3</b><br>Test class: autotest.NewTest3</td>
-<td></td>
-<td>0</td>
-<td>autotest.NewTest3@7e0babb1</td></tr>
-<tr>
-<td title='autotest.NewTest3.TC_4()'><b>TC_4</b><br>Test class: autotest.NewTest3</td>
-<td></td>
-<td>1</td>
-<td>autotest.NewTest3@7e0babb1</td></tr>
-<tr>
-<td title='autotest.NewTest3.TC_6()'><b>TC_6</b><br>Test class: autotest.NewTest3</td>
-<td></td>
-<td>10</td>
-<td>autotest.NewTest3@7e0babb1</td></tr>
+<td>4</td>
+<td>autotest.Lession04@27f674d</td></tr>
 </table><p>
 </body>
 </html>
